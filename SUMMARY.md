@@ -29,6 +29,6 @@
 
 ## 🧩 API
 
-* [📘 Overview](api/README.md)
+* [🧩 Overview](api/README.md)
 * [🔑 Setup](api/setup.md)
-* [🛠 Usage](api/usage.md)
+* [🛠️ Usage](api/usage.md)

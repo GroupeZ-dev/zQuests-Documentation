@@ -36,8 +36,8 @@ quests:
 
 Specifies the type of the quest. It determines the main objective and how progress is tracked.
 
-- **Required:** Yes
-- **Default:** None. You must specify one of the quest types listed below.
+* **Required:** Yes
+* **Default:** None. You must specify one of the quest types listed below.
 
 **Example:**
 
@@ -51,9 +51,9 @@ type: BLOCK_BREAK
 
 Defines the specific actions required to complete the quest. It can include one or more materials, entities, or tags that the player must interact with.
 
-- **Required:** Depends on the quest type; omit or leave empty if not needed.
-- **Default:** Empty list.
-- **Notes:** Each entry may use keys such as `material`, `entity`, or `tag` depending on the quest type.
+* **Required:** Depends on the quest type; omit or leave empty if not needed.
+* **Default:** Empty list.
+* **Notes:** Each entry may use keys such as `material`, `entity`, or `tag` depending on the quest type.
 
 **Example:**
 
@@ -69,9 +69,9 @@ actions:
 
 A unique identifier for the quest. It must be unique across all quests and should never change once set.
 
-- **Required:** Yes
-- **Default:** None.
-- **Notes:** Player progress is stored using this value, so changing it can reset or corrupt quest data.
+* **Required:** Yes
+* **Default:** None.
+* **Notes:** Player progress is stored using this value, so changing it can reset or corrupt quest data.
 
 **Example:**
 
@@ -89,9 +89,9 @@ Be careful, the name of the quest must be unique!
 
 The name of the quest as displayed in-game. This name is visible to the players and can be descriptive.
 
-- **Required:** No
-- **Default:** Uses the value of `name` if not provided.
-- **Notes:** Supports Minecraft color codes.
+* **Required:** No
+* **Default:** Uses the value of `name` if not provided.
+* **Notes:** Supports Minecraft color codes.
 
 **Example:**
 
@@ -105,8 +105,8 @@ display-name: "Stone Breaker"
 
 Provides a description of the quest that players can read to understand what is required to complete it.
 
-- **Required:** No
-- **Default:** `no description`
+* **Required:** No
+* **Default:** `no description`
 
 **Example:**
 
@@ -120,8 +120,8 @@ description: "Break 500 stone blocks"
 
 Allows you to display the description using placeholders. This can be used with the placeholder configuration system.
 
-- **Required:** No
-- **Default:** Uses `description` if not set.
+* **Required:** No
+* **Default:** Uses `description` if not set.
 
 **Example:**
 
@@ -135,9 +135,9 @@ placeholder-description: "Break %quest-remaining% stone blocks"
 
 Defines the material that will be displayed as the thumbnail icon for the quest in the quest menu.
 
-- **Required:** No
-- **Default:** None.
-- **Notes:** Uses [Bukkit material names](https://hub.spigotmc.org/javadocs/bukkit/org/bukkit/Material.html).
+* **Required:** No
+* **Default:** None.
+* **Notes:** Uses [Bukkit material names](https://hub.spigotmc.org/javadocs/bukkit/org/bukkit/Material.html).
 
 **Example:**
 
@@ -151,8 +151,8 @@ thumbnail: STONE
 
 The number of times the action must be performed to complete the quest. This could be the number of blocks broken, items crafted, etc.
 
-- **Required:** Yes
-- **Default:** 1
+* **Required:** Yes
+* **Default:** 1
 
 **Example:**
 
@@ -166,8 +166,8 @@ goal: 500
 
 Determines whether the quest should be automatically accepted when available to the player.
 
-- **Required:** No
-- **Default:** false
+* **Required:** No
+* **Default:** false
 
 **Example:**
 
@@ -181,9 +181,9 @@ auto-accept: true
 
 Sets whether global rewards defined in the main configuration will be given when the quest is completed.
 
-- **Required:** No
-- **Default:** true
-- **Notes:** Set to `false` if you only want the rewards listed in the quest to be granted.
+* **Required:** No
+* **Default:** true
+* **Notes:** Set to `false` if you only want the rewards listed in the quest to be granted.
 
 **Example:**
 
@@ -197,8 +197,8 @@ use-global-rewards: true
 
 Allows you to define if a quest will be in favorites when it starts. The player can manage favorite quests with the `ZQUESTS_HISTORY` button.
 
-- **Required:** No
-- **Default:** false
+* **Required:** No
+* **Default:** false
 
 **Example:**
 
@@ -212,8 +212,8 @@ favorite: false
 
 Sets whether the player can change a quest to favorite or not.
 
-- **Required:** No
-- **Default:** true
+* **Required:** No
+* **Default:** true
 
 **Example:**
 
@@ -227,9 +227,9 @@ can-change-favorite: true
 
 Allows you to define if when advancing this quest, it prevents the progression of other quests. You can use this for quests with citizens for example.
 
-- **Required:** No
-- **Default:** false
-- **Notes:** When enabled, progress for other quests of the same type will be ignored.
+* **Required:** No
+* **Default:** false
+* **Notes:** When enabled, progress for other quests of the same type will be ignored.
 
 **Example:**
 
@@ -243,8 +243,8 @@ unique: false
 
 Allows you to define if a quest is invisible in the `ZQUESTS_HISTORY` button.
 
-- **Required:** No
-- **Default:** false
+* **Required:** No
+* **Default:** false
 
 **Example:**
 
@@ -258,8 +258,8 @@ hidden: false
 
 Allows you to define the custom model id of the quest that will be used in various placeholders.
 
-- **Required:** No
-- **Default:** Uses the group's default custom model id or `0` if unspecified.
+* **Required:** No
+* **Default:** Uses the group's default custom model id or `0` if unspecified.
 
 **Example:**
 
@@ -273,7 +273,7 @@ custom-model-id: 0
 
 Defines the rewards given to the player upon completing the quest. Multiple types of rewards can be specified.
 
-- **Default:** Empty list.
+* **Default:** Empty list.
 
 {% hint style="info" %}
 You can use all [actions](https://docs.zmenu.dev/configurations/buttons/actions) of zMenu
@@ -295,7 +295,7 @@ rewards:
 
 Allows to define the actions to be performed when the quest will start.
 
-- **Default:** Empty list.
+* **Default:** Empty list.
 
 {% hint style="info" %}
 You can use all [actions](https://docs.zmenu.dev/configurations/buttons/actions) of zMenu
@@ -314,8 +314,8 @@ start-actions:
 
 Rewards that are only executed if specified requirements are met. Useful for giving extra rewards to players with specific permissions or conditions.
 
-- **Default:** Empty list.
-- **Notes:** Uses zMenu's requirement system for the `requirements` section.
+* **Default:** Empty list.
+* **Notes:** Uses zMenu's requirement system for the `requirements` section.
 
 **Example:**
 
@@ -334,8 +334,8 @@ permissible-rewards:
 
 Requirements that must be met for the quest to register progress. If the player does not satisfy these conditions, the quest will not advance.
 
-- **Default:** Empty list.
-- **Notes:** Uses zMenu's requirement syntax.
+* **Default:** Empty list.
+* **Notes:** Uses zMenu's requirement syntax.
 
 **Example:**
 
@@ -349,8 +349,8 @@ action-requirements:
 
 Displays one or more holograms when the quest is active. See [Waypoints & Holograms](waypoints-and-holograms.md) for complete configuration options. You can reference a global hologram defined in `holograms.yml` by name or specify the configuration inline.
 
-- **Default:** No hologram.
-- **Notes:** Requires a compatible hologram system such as zEssentials.
+* **Default:** No hologram.
+* **Notes:** Requires a compatible hologram system such as zEssentials.
 
 **Global reference example:**
 
@@ -371,8 +371,8 @@ hologram:
 
 Creates a waypoint guiding the player to a location. See [Waypoints & Holograms](waypoints-and-holograms.md) for full configuration options. Like holograms, this can reference a global configuration from `waypoints.yml` or define its own location and appearance.
 
-- **Default:** No waypoint.
-- **Notes:** The `color` field accepts common color names or hex codes.
+* **Default:** No waypoint.
+* **Notes:** The `color` field accepts common color names or hex codes.
 
 **Global reference example:**
 
@@ -694,7 +694,7 @@ quests:
 
 ### `EXPERIENCE_GAIN`
 
-The player must gain a certain amount of experience. This can be earned by mining, breeding, crafting, etc.&#x20;
+The player must gain a certain amount of experience. This can be earned by mining, breeding, crafting, etc.
 
 **Example usage:**
 
@@ -921,7 +921,7 @@ The cuboid is composed of the `world name`, a first set of coordinates (`x`, `y`
 
 ### `CUSTOM`
 
-Allows checking for a specific element related to your plugins. For example, you can verify if a player is interacting with a villager. You must use the API.\
+Allows checking for a specific element related to your plugins. For example, you can verify if a player is interacting with a villager. You must use the API.\
 The custom type will take a string data input and verify if the data is correct.
 
 **Example usage:**
@@ -990,15 +990,20 @@ quests:
 **API example:**
 
 ```java
+QuestsPlugin questsPlugin = (QuestsPlugin) Bukkit.getServer().getPluginManager().getPlugin("zQuests"); 
+int result = questsPlugin.getQuestManager().handleInventoryQuests(new InventoryContent(player, "cube"));
+ if (result > 0) return;
+```
+
 ***
 
-### `LOOK_AT_BLOCK`
+#### `LOOK_AT_BLOCK`
 
 The player must look at a block located inside a defined cuboid. The maximum detection distance is controlled by `look-at-distance-block` in `config.yml`.
 
 **Example usage:**
 
-```yaml
+```java
 quests:
   - type: LOOK_AT_BLOCK
     actions:
@@ -1028,15 +1033,9 @@ quests:
     goal: 1
 ```
 
-
-QuestsPlugin questsPlugin = (QuestsPlugin) Bukkit.getServer().getPluginManager().getPlugin("zQuests");
-int result = questsPlugin.getQuestManager().handleInventoryQuests(new InventoryContent(player, "cube"));
-if (result > 0) return;
-```
-
 ***
 
-### `SHEAR`
+#### `SHEAR`
 
 Allows checking when a player shears an entity.
 
@@ -1052,18 +1051,3 @@ quests:
     description: "Shear 20 sheep"
     goal: 20
 ```
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
