@@ -652,6 +652,10 @@ quests:
     goal: 64
 ```
 
+{% hint style="warning" %}
+You must use [zShop](https://www.spigotmc.org/resources/zshop-advanced-shop-plugin.74073/) !
+{% endhint %}
+
 ***
 
 ### `PURCHASE`
@@ -671,6 +675,10 @@ quests:
     thumbnail: IRON_INGOT
     goal: 64
 ```
+
+{% hint style="warning" %}
+You must use [zShop](https://www.spigotmc.org/resources/zshop-advanced-shop-plugin.74073/) !
+{% endhint %}
 
 ***
 
@@ -805,7 +813,7 @@ quests:
 
 ### `JOB_LEVEL`
 
-The player must reach a certain level in a job. Only with zJobs for the moment.
+The player must reach a certain level in a job.
 
 **Example usage:**
 
@@ -819,6 +827,10 @@ quests:
     description: "Achieve level 50 of the minor job"
     goal: 50
 ```
+
+{% hint style="warning" %}
+You must use [zJobs](https://groupez.dev/resources/zjobs.336) !
+{% endhint %}
 
 ***
 
@@ -838,6 +850,10 @@ quests:
     description: "Achieve prestige 1 of the minor job"
     goal: 1
 ```
+
+{% hint style="warning" %}
+Y must use [zJobs](https://groupez.dev/resources/zjobs.336) !
+{% endhint %}
 
 ***
 
@@ -874,6 +890,10 @@ quests:
     description: "Create an island"
     goal: 1
 ```
+
+{% hint style="warning" %}
+You must use [SuperiorSkyBlock](https://www.spigotmc.org/resources/%E2%9A%A1%EF%B8%8F-superiorskyblock2-%E2%9A%A1%EF%B8%8F-the-best-core-on-market-%E2%9A%A1%EF%B8%8F-1-21-5-support.87411/) !
+{% endhint %}
 
 ***
 
